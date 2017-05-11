@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class CommentRemoveConfirmation extends React.Component {
+export default class CommentConfirmation extends React.Component {
   constructor() {
     super();
 
@@ -43,4 +43,8 @@ export default class CommentRemoveConfirmation extends React.Component {
     e.preventDefault();
     this.props.onConfirm();
   }
+}
+
+CommentConfirmation.propTypes = {
+  onConfirm: React.PropTypes.func.isRequired
 }
